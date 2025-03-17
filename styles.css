@@ -1,0 +1,172 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ----- HEADER ----- */
+header {
+    background-color: #1e3a8a; /* Azul oscuro */
+    padding: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #facc15; /* Amarillo */
+}
+
+/* ----- SECCIÓN BIENVENIDA ----- */
+.bienvenida {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+}
+
+.bienvenida h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* ----- BIOGRAFÍA ----- */
+.biografia {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.biografia img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- PORTFOLIO ----- */
+.portfolio {
+    padding: 60px 20px;
+    background-color: #e5e7eb; /* Gris claro */
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.proyecto {
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
+
+.proyecto img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* ----- CONTACTO ----- */
+.contacto {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 12px;
+    background-color: #facc15;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #fbbf24;
+}
+
+/* ----- MEDIA QUERIES ----- */
+@media (min-width: 768px) {
+    .bienvenida {
+        text-align: left;
+        padding: 80px;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .proyecto {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bienvenida {
+        padding: 100px;
+    }
+
+    .proyecto {
+        width: 30%;
+    }
+}
